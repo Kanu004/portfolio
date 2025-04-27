@@ -7,8 +7,8 @@ const assets = [
   './copy-removebg-preview.png',
   './preview.jpg',
   './Screenshot 2025-04-27 204134.png',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
+  './android-chrome-192x192.png',
+  './android-chrome-512x512.png',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'
 ];
 
