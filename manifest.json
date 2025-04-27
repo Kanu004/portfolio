@@ -1,7 +1,7 @@
 {
     "name": "Kanika's Portfolio",
     "short_name": "Portfolio",
-    "start_url": "./portfolio.html",
+    "start_url": "./",
     "display": "standalone",
     "background_color": "#cddfe2",
     "theme_color": "#e78082",
