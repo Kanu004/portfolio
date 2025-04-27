@@ -1,6 +1,6 @@
 const cacheName = 'portfolio-cache-v1';
 const assets = [
-  './portfolio.html',
+  './index.html',
   './style.css',
   './style.js',
   './IMG20241126210433-removebg-preview.png',
