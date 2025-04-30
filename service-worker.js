@@ -1,14 +1,18 @@
-const cacheName = 'portfolio-cache-v1';
+const cacheName = 'portfolio-cache-v1'; 
+
 const assets = [
-  './index.html',
+  './',
   './style.css',
   './style.js',
-  './IMG20241126210433-removebg-preview.png',
+  './kanu-removebg-preview.png',
   './copy-removebg-preview.png',
   './preview.jpg',
+  './resume.png',
   './Screenshot 2025-04-27 204134.png',
   './android-chrome-192x192.png',
   './android-chrome-512x512.png',
+  './favicon.ico',
+  './KANIKA-THAKUR-Resume.pdf',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'
 ];
 
@@ -29,3 +33,8 @@ self.addEventListener('fetch', event => {
     })
   );
 });
+
+caches.open(cacheName).then(cache => {
+  return cache.addAll(assets); // Includes HTML, CSS, JS, etc.
+});
+

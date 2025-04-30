@@ -8,6 +8,23 @@
 body{
     background: linear-gradient(to bottom, #cddfe2,#e6a4b6,#9ddfe7,#e08f91);
 }
+/* Add this at the bottom of style.css */
+#about, 
+#qualifications, 
+#skills, 
+#projects, 
+#contact {
+    scroll-margin-top: 70px; /* Leaves room below fixed navbar */
+}
+.aboutContent,
+.qualificationContent,
+.skills,
+.projects,
+.contactContent {
+    padding: 80px 0 30px;
+    height: auto; /* Allows natural height based on content */
+}
+
 /*navBar*/
 .navBar{
     height: 70px;
@@ -54,25 +71,31 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.inner {
-    width: 41%;
-    padding: 60px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    margin-top: 100px;
-    gap: 40px;
-    flex-wrap: wrap;
+.resume-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #267c88;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
+
+.resume-btn:hover {
+    background-color: #124c53;
+    color: #fff;
+}
+
 .inner:hover{
     transform: scale(1.1);
     transition: all 1s ease;
 }
 .name {
+    width: 40%;
     flex: 1;
     color: #f7afb0;
     padding-right: 30px;
@@ -94,20 +117,28 @@ body{
     color: #5D77A8;
 }
 .image {
+    width: 60%;
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
 }
 .image img {
-    max-width: 100%;
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width:900px;
+    height:450px;
+    object-fit:contain;
 }
-  
+
+.inner {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
 @keyframes float{
     from{
         transform: scale(0);
@@ -116,9 +147,16 @@ body{
         transform: scale(1.02);
     }
 }
+@keyframes floatt{
+    from{
+        transform: scale(0.06);
+    }
+    to{
+        transform: scale(1);
+    }
+}
 /*about*/
 .aboutContent{
-    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -126,7 +164,6 @@ body{
     align-items: center;
 }
 #h1{
-    margin-top: 40px;
     font-size: 2.2rem;
     font-weight: bold;
     color:#90D4DD;
@@ -138,6 +175,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 30px;
 }
 .animate-float {
     animation: float1 1s ease-in backwards;
@@ -151,7 +189,7 @@ body{
     }
 }
 .image{
-    max-width: 50%;
+    max-width: 20%;
 }
 .image1 img{
     height:350px;
@@ -161,12 +199,12 @@ body{
     object-fit: cover;
 }
 .content1{
-    max-width: 50%;
+    max-width: 80%;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 .content1 #p2{
     width: 100%;
@@ -177,7 +215,6 @@ body{
 }
 /*qualifications*/
 .qualificationContent {
-    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -192,6 +229,13 @@ body{
     gap: 30px;
     justify-content: space-evenly;
     align-items: center;
+}
+#h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color:#90D4DD;
+    text-shadow: 0px 3px 2px #5D77A8;
+    text-align: center;
 }
 .qualificationItem {
     width: 500px;
@@ -235,15 +279,13 @@ body{
 }
 /*skills*/
 .skills {
-    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
-#h2{
-    margin-top: 70px;
+#h3{
     font-size: 2.2rem;
     font-weight: bold;
     color:#e78082;
@@ -316,7 +358,6 @@ body{
   
 /* projects */
 .projects {
-    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -333,10 +374,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+#h4{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color:#e78082;
+    text-shadow: 0px 3px 2px pink;
+    text-align: center;
+}
 
 .projectCard {
     width: 300px;
-    height: auto;
+    height:450px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
     border-radius: 20px;
@@ -369,6 +417,7 @@ body{
     font-size: 1rem;
     color: #333;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 .projectLinks a {
@@ -403,41 +452,42 @@ body{
 }
 
 /* contact */
-.contactContent {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.inner5 {
-    max-width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
 .contactCard {
-    display: flex;
+    display:flex;
     flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 100%;
     width: 500px;
-    height: 200px;
+    height: 300px;
+    border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
-    border-radius: 20px;
-    padding: 20px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.5s ease;
 }
-.card{
+
+.card {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align:justify;
+}
+.inner5 {
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    margin-top:10px;
+}
+#h5{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color:#90D4DD;
+    text-shadow: 0px 3px 2px #5D77A8;
+    text-align: center;
 }
 
 .card h3 {
