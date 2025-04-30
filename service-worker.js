@@ -12,7 +12,7 @@ const assets = [
   './android-chrome-192x192.png',
   './android-chrome-512x512.png',
   './favicon.ico',
-  './KANIKA-THAKUR-Resume.pdf',
+  './KANIKA-THAKUR-FlowCV-Resume-20250430.pdf',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'
 ];
 
