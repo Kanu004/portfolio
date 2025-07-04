@@ -1,3 +1,4 @@
+
 const aboutInner = document.querySelector(".inner1"); 
 const aboutLink = document.querySelector('a[href="#about"]'); 
 
@@ -23,7 +24,7 @@ aboutLink.addEventListener("click",()=> {
 qualiLink.addEventListener('click',()=>{
     qualiInner.classList.add("animate-scale");
     setTimeout(()=>{
-        aboutInner.classList.remove("animate.scale");
+        qualiInner.classList.remove("animate-scale");
     },1500);
 })
 
@@ -31,19 +32,19 @@ skillLink.addEventListener("click",()=>{
   skillInner.classList.add("animate-fade-in");
   setTimeout(()=>{
     skillInner.classList.remove("animate-fade-in");
-},2000);
+  },2000);
 })
 
 projectLink.addEventListener("click",()=>{
   projectInner.classList.add("animate-project");
   setTimeout(()=>{
     projectInner.classList.remove("animate-project");
-},2000);
+  },2000);
 })
 
 contactLink.addEventListener("click",()=>{
   contactInner.classList.add("animate-slide");
   setTimeout(()=>{
     contactInner.classList.remove("animate-slide");
-},2000);
+  },2000);
 })

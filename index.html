@@ -1,54 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanika's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <meta name="theme-color" content="#e78082">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanika's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="manifest" href="./fav/manifest.json">
+  <link rel="shortcut icon" href="./fav/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#e78082">
 </head>
 <body>
-    <nav>
-        <div class="navBar">
-            <a href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#qualifications">Qualifications</a>
-            <div class="port">
-                <h1>PORTFOLIO</h1>
-            </div>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact Me</a>
-        </div>
-    </nav>
-    <main>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#qualifications">Qualifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <div class="homeContent" id="home">
-            <div class="inner">
-                <div class="name">
-                    <h2 id="h">Hiii...👋 I'm kanika thakur...</h2>
-                    <p id="p">Web Developer...
-                    <sub id="p1">I love building modern, responsive web apps and bringing ideas to life with technology.🚀</sub></p>
-                    <a href="./KANIKA-THAKUR-FlowCV-Resume-20250430.pdf" download class="resume-btn">Download Resume</a>
-                </div>
-                <div class="image">
-                    <img src="./kanu-removebg-preview.png" alt="kanika">
-                </div>
-            </div>
-        </div>
+  <main class="mt-5 pt-4">
+    <!-- Home Section -->
+    <section class="container d-flex flex-column flex-md-row align-items-center justify-content-between py-5" id="home">
+      <div class="text-md-start text-center mb-4">
+        <h2 class="text-primary">Hiii...👋 I'm Kanika Thakur</h2>
+        <p class="lead">Web Developer...</p>
+        <sub class="text-muted">I love building modern, responsive web apps and bringing ideas to life with technology.🚀</sub><br>
+        <a href="./resume/KANIKA-THAKUR-FlowCV-Resume-20250430.pdf" download class="btn btn-primary mt-3">Download Resume</a>
+      </div>
+      <div class="text-center">
+        <img src="./images/kanu-removebg-preview.png" alt="kanika" class="img-fluid rounded" style="max-height: 400px;">
+      </div>
+    </section>
 
-        <div class="aboutContent" id="about">
-            <h2 id="h1">About me</h2>
-            <div class="inner1">
-                <div class="image1">
-                    <img src="./copy-removebg-preview.png" alt="kanikaAbout">
-                </div>
-                <div class="content1">
-                    <p id="p2">Hello! 👋 I'm Kanika Thakur, a passionate and creative Web Developer based in India. I am currently in the final semester of my B.Tech in Computer Science from ABVGIET University. <br><br>
+    <!-- About Section -->
+    <section class="container py-5" id="about">
+      <h2 class="text-center text-info mb-4">About Me</h2>
+      <div class="inner1">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img src="./images/copy-removebg-preview.png" alt="kanikaAbout" class="img-fluid rounded-circle border">
+          </div>
+          <div class="col-md-8">
+            <p>Hello! 👋 I'm Kanika Thakur, a passionate and creative Web Developer based in India. I am currently in the final semester of my B.Tech in Computer Science from ABVGIET University. <br><br>
 
                     I'm building my skills in React, Node.js and I constantly challenge myself to learn new tools, technologies, and frameworks to stay updated in the fast-moving world of web development. <br><br>
                     
@@ -57,147 +67,134 @@
                     When I'm not coding, you can find me exploring different dance styles 💃, playing games 🎮, or capturing beautiful moments through nature photography 📷. <br><br>
                     
                     I'm truly excited about future opportunities where I can continue growing, learning, and contributing my skills to meaningful and impactful projects! 🚀</p>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="qualificationContent" id="qualifications">
-            <h2 id="h2">QUALIFICATIONS</h2>
-            <div class="inner2">
-                <div class="qualificationItem">
-                    <h3>Bachelor of Technology (B.Tech) in Computer Science</h3>
-                    <h4>Atal Bihari Vajpayee Government Institute of Engineering and Technology (ABVGIET), Himachal Pradesh</h4>
-                    <p>2021 - 2025 | Pursuing | Current CGPA: 7.85/10</p>
-                </div>
-            
-                <div class="qualificationItem">
-                    <h3>Diploma in Computer Science</h3>
-                    <h4>GPW Kandaghat, Himachal Pradesh</h4>
-                    <p>2019 - 2022 | Percentage: 78.75%</p>
-                </div>
-            
-                <div class="qualificationItem">
-                    <h3>Secondary Education (10th Grade)</h3>
-                    <h4>HPBOSS</h4>
-                    <p>2018 - 2019 | Percentage: 84%</p>
-                </div>
+    <!-- Qualifications Section -->
+
+    <section class="container py-5" id="qualifications">
+      <h2 class="text-center text-info mb-4">Qualifications</h2>
+      <div class="inner2">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="qualificationItem">
+              <h4>B.Tech in Computer Science</h4>
+              <p>ABVGIET, Himachal Pradesh<br>2021-2025 | CGPA: 7.98/10</p>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="qualificationItem">
+              <h4>Diploma in Computer Science</h4>
+              <p>GPW Kandaghat<br>2019-2022 | 78.75%</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="qualificationItem">
+              <h4>Secondary Education</h4>
+              <p>HPBOSS<br>2018-2019 | 84%</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="skills" id="skills">
-            <h2 id="h3">Skills</h2>
+    <!-- Skills Section -->
+    <section class="container py-5" id="skills">
+      <h2 class="text-center text-warning mb-4">Skills</h2>
+      <div class="inner3">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Hard Skills</h4>
+            <p>HTML 95%</p>
+            <progress value="95" max="100" class="mb-3"></progress>
+            <p>CSS 95%</p>
+            <progress value="95" max="100" class="mb-3"></progress>
+            <p>JavaScript 80%</p>
+            <progress value="80" max="100" class="mb-3"></progress>
+          </div>
+          <div class="col-md-6">
+            <h4>Soft Skills</h4>
+            <p>Adaptability 95%</p>
+            <progress value="95" max="100" class="mb-3"></progress>
+            <p>Work Ethic 95%</p>
+            <progress value="95" max="100" class="mb-3"></progress>
+            <p>Time Management 90%</p>
+            <progress value="90" max="100" class="mb-3"></progress>
+            <p>Communication 90%</p>
+            <progress value="90" max="100" class="mb-3"></progress>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="inner3">
-
-              <div class="hardSkill">
-                <h3>Hard Skills</h3>
-                <div class="skill-bar">
-                  <p>HTML <span>95%</span></p>
-                  <progress value="95" max="100"></progress>
-                </div>
-                <div class="skill-bar">
-                  <p>CSS <span>95%</span></p>
-                  <progress value="95" max="100"></progress>
-                </div>
-                <div class="skill-bar">
-                  <p>JavaScript <span>80%</span></p>
-                  <progress value="80" max="100"></progress>
-                </div>
+    <!-- Projects Section -->
+    <section class="container py-5" id="projects">
+      <h2 class="text-center text-danger mb-4">Projects</h2>
+      <div class="inner4">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="./images/preview.jpg" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">Extension Manager</h5>
+                <p class="card-text">Landing Page with toggle/filter UI for browser extensions</p>
+                <a href="https://github.com/Kanu004/ExtensionList" class="btn btn-outline-primary" target="_blank">GitHub</a>
+                <a href="https://Kanu004.github.io/ExtensionList/browser-extensions-manager-ui-main/" class="btn btn-outline-success" target="_blank">Live Demo</a>
               </div>
-          
-              <div class="softSkills">
-                <h3>Soft Skills</h3>
-                <div class="skill-bar">
-                  <p>Adaptability <span>95%</span></p>
-                  <progress value="95" max="100"></progress>
-                </div>
-                <div class="skill-bar">
-                  <p>Work Ethic <span>95%</span></p>
-                  <progress value="95" max="100"></progress>
-                </div>
-                <div class="skill-bar">
-                  <p>Time Management <span>90%</span></p>
-                  <progress value="90" max="100"></progress>
-                </div>
-                <div class="skill-bar">
-                  <p>Clear and Polite Communicator <span>90%</span></p>
-                  <progress value="90" max="100"></progress>
-                </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="./images/Screenshot 2025-04-27 204134.png" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Tic-Tac-Toe</h5>
+                <p class="card-text">A PWA application game with 2players and AI module...</p>
+                <a href="https://github.com/Kanu004/Tic-tac-toe" class="btn btn-outline-primary" target="_blank">GitHub</a>
+                <a href="https://kanu004.github.io/Tic-tac-toe/" class="btn btn-outline-success" target="_blank">Live Demo</a>
               </div>
-          
             </div>
-          </div>     
-          
-          <div class="projects" id="projects">
-            <h2 id="h4">Projects</h2>
-            <div class="inner4">
-
-                <div class="projectCard">
-                    <img src="./preview.jpg" alt="Extension Manager">
-                    <h3>Extension Manager</h3>
-                    <p>A Landing Page for an Extension Manager that provides an organized interface to manage, toggle, and filter browser extensions, with light/dark mode and active/inactive filters.</p>
-                    <div class="projectLinks">
-                        <a href="https://github.com/Kanu004/ExtensionList" target="_blank">GitHub</a>
-                        <a href="https://Kanu004.github.io/ExtensionList/browser-extensions-manager-ui-main/" target="_blank">Live Demo</a>
-                    </div>
-                </div>
-        
-                <div class="projectCard animate-project">
-                    <img src="./Screenshot 2025-04-27 204134.png" alt="Tictactoe">
-                    <h3>Tic-Tac-Toe</h3>
-                    <p>A PWA application game with 2players and AI module...that allows users to play against the computer, offering an interactive and challenging experience.</p>
-                    <div class="projectLinks">
-                        <a href="https://github.com/Kanu004/Tic-tac-toe" target="_blank">GitHub</a>
-                        <a href=" https://kanu004.github.io/Tic-tac-toe/" target="_blank">Live Demo</a>
-                    </div>
-                </div>
-
-                <div class="projectCard animate-project">
-                    <img src="./resume.png" alt="resumebuilder">
-                    <h3>Resume Builder</h3>
-                    <p>A tool to quickly create and download professional resumes by filling out personal details, education, skills, and work experience.</p>
-                    <div class="projectLinks">
-                        <a href="https://github.com/Kanu004/ResumeBuilder" target="_blank">GitHub</a>
-                        <a href=" https://kanu004.github.io/ResumeBuilder/" target="_blank">Live Demo</a>
-                    </div>
-                </div>
-
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="./images/resume.png" class="card-img-top" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Resume Builder</h5>
+                <p class="card-text">A tool to quickly create and download professional resumes...</p>
+                <a href="https://github.com/Kanu004/ResumeBuilder" class="btn btn-outline-primary" target="_blank">GitHub</a>
+                <a href="https://kanu004.github.io/ResumeBuilder/" class="btn btn-outline-success" target="_blank">Live Demo</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="contactContent" id="contact">
-            <h2 id="h5">Contact Me</h2>
-            <div class="inner5">
-                <div class="contactCard">
-                    <div class="card">
-                        <h3>Email:-</h3>
-                        <a href="mailto:kanikathakur07610761@gmail.com">Send mail</a>
-                    </div>
-                    <div class="card">
-                        <h3>LinkedIn:-</h3>
-                        <a href="https://www.linkedin.com/in/kanika-thakur-954380311/" target="_blank">LinkedIn Profile</a>
-                    </div>
-                    <div class="card">
-                        <h3>Github:-</h3>
-                        <a href="https://github.com/Kanu004">GitHub Profile</a>
-                    </div>
-                    <div class="card">
-                        <h3>Location:-</h3>
-                        <p>Himachal Pradesh, India</p>
-                    </div>
-                </div>
-            </div>
-        </div>           
-    </main>
-
-    <footer>
-        <div class="footer">
-            <h5><i class="fa-regular fa-copyright"></i>Kanika Thakur, All rights reserved</h5>
+    <!-- Contact Section -->
+    <section class="container py-5" id="contact">
+      <h2 class="text-center text-info mb-4">Contact Me</h2>
+      <div class="inner5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item"><strong>Email:</strong> <a href="mailto:kanikathakur07610761@gmail.com">Send mail</a></li>
+              <li class="list-group-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kanika-thakur-954380311/" target="_blank">Profile</a></li>
+              <li class="list-group-item"><strong>GitHub:</strong> <a href="https://github.com/Kanu004" target="_blank">Profile</a></li>
+              <li class="list-group-item"><strong>Location:</strong> Himachal Pradesh, India</li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="style.js"></script>
-    <script src="register-sw.js"></script>
+  <footer class="bg-dark text-white text-center py-3">
+    <small>&copy; Kanika Thakur, All rights reserved</small>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/style.js"></script>
+  <script src="./fav/register-sw.js"></script>
 </body>
 </html>
